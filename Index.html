@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <title>Cnc Machine</title>
+</head>
+<body>
+    <div class="Loader_Container">
+        <div class="loader"></div>
+      </div>
+   <div class="wrapper" style="overflow: hidden;">
+    <header>
+        <div style="max-width: 2500px; margin: auto; width: 100%; display: flex;">
+            <a href="#" class="Logo">
+                <img src="./Images/logo.png" alt="Sorry for the Image">
+            </a>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">Services</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#ourteam" class="nav_link">Our Team</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contactus" class="nav_link">ContactUs</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="BtnHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+           
+    </header>
+    <!----------Home Section---------->
+    <section id="home">     
+        <div class="swiper HomeSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <div class="Slider_Container">
+                    <img src="./Images/Slider_1.jpg" alt="">
+                    <div class="overlayer"></div>
+                    <div class="Slider_Content">
+                        <h1 class="Slider_Content_header">
+                            CNC Machining Services
+                        </h1>
+                        <p class="Slider_Content_text">
+                            Prototypes and Production parts Global Delivery
+                        </p>
+                        <a class="btn_ContactUs" href="#">Contact Us</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="Slider_Container">
+                  <img src="./Images/Slider_2.jpg" alt="">
+                  <div class="overlayer"></div>
+                  <div class="Slider_Content">
+                      <h1 class="Slider_Content_header">
+                          3D design Services
+                      </h1>
+                      <p class="Slider_Content_text">
+                        Turn Your Ideas Into a Reality
+                      </p>
+                      <a class="btn_ContactUs" href="#">Contact Us</a>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="Slider_Container">
+                  <img src="./Images/Slider_3.jpg" alt="">
+                  <div class="overlayer"></div>
+                  <div class="Slider_Content">
+                      <h1 class="Slider_Content_header">
+                          
+                        Injection Molding Design Services
+                      </h1>
+                      <p class="Slider_Content_text">
+                        Mold Every Thisng
+                      </p>
+                      <a class="btn_ContactUs" href="#">Contact Us</a>
+                  </div>
+              </div>
+            </div>
+            
+            </div>
+           
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </section>
+    <!-- our Services Section -->
+    <section id="about">
+       <h1 class="about_title text-center p-5"><!--About Us-->О КОМПАНИИ</h1>
+       <div class="row About_Contaniner" >
+           <div class="col-12 col-lg-6 order-1 order-lg-2 ">
+               <img src="./Images/AboutUs_image.jpeg" alt="" class="About_image">
+
+           </div>
+           <div class="col-12 col-lg-6 order-2 order-lg-1 ps-4 pt-5 pt-lg-0 ps-lg-5
+           text-center text-lg-start">
+               <h4 class="ps-2 pe-2 ps-lg-5 pe-lg-4 About_content">
+                  Наша компания является отечественным производителем пластмасс и 
+                  пресс-форм для литья на территории Республики Казахстан. Была основана в ГОД, 
+                  и за этот период уже завоевала большой авторитет среди отечественных производителей. 
+                  Процесс создания пресс-формы включает в себя множество этапов: создание 3D модели, 
+                  изготовление прототипа, проектирование пресс-формы, изготовление пресс-формы, тестовая 
+                  отливка. Мы осуществляем полный цикл изготовления пресс-форм и используем современные, 
+                  высокоточные и высокоскоростные оборудования и станки с ЧПУ. Производственная база предприятия
+                   состоит из более 20-ти единиц высокопроизводительного оборудования, 
+                  в том числе 7 термопласт автоматами для литья пластмассы.
+                 </h4>
+           </div>
+       </div>
+    </section>
+
+<!-- Services -->
+    <section id="services" class="mt-5 bg-dark " style="min-height: 100vh; padding-bottom: 2rem;">
+        <h1 class="titile_Section text-uppercase text-light mb-5 pt-5">
+            Наши услуги
+        </h1>
+        <div class="row px-lg-5 text-light Grid_Services">
+            <div class="col-12 col-lg-6 image_of_Services order-0 order-lg-1" data-aos="fade-left">
+                <img src="./Images/plastic-injection-molding-service.jpg" alt="" class=" ">
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-0" data-aos="fade-right">
+                <h2 class="Title_col_Services">
+                    Услуги по литью пластмасс под давлением
+                </h2>
+                <p class="text_of_services" >
+                    (наша_компания) специализируется на производстве высококачественных пластмассовых деталей для литья под давлением и инструментов для литья под давлением, мы предоставляем услуги обработки и отделки с ЧПУ для изготовления инструментов для литья под давлением из различных металлических материалов.
+                </p>
+                <div><a href="MoldService.html" class="btn btn-primary text-light ms-5 mb-5">Read More </a></div> 
+            </div>
+            
+
+        </div>
+        <div class="row px-lg-5 text-light Grid_Services">
+            <div class="col-12 col-lg-6 image_of_Services order-0 " data-aos="fade-right">
+                <img src="./Images/pexels-daniel-smyth-8865184.jpg" alt="" class=" ">
+            </div>
+            <div class="col-12 col-lg-6 order-1 " data-aos="fade-left">
+                <h2 class="Title_col_Services">
+                    CNC Machining Services
+                </h2>
+           
+
+                <p class="text_of_services" data-aos="fade-rigth">
+                    We Precision provides various precision CNC machining service for customers and institutions in world-wide. Our CNC machining services including CNC milling, CNC turning, EDM(electrical discharge machining) and surface grinding treatment
+                </p>
+                <div><a href="CncMachineServices.html" class="btn btn-primary text-light ms-5 mb-5">Read More </a></div> 
+            </div>
+
+
+        </div>
+        <div class="row px-lg-5 text-light Grid_Services">
+            <div class="col-12 col-lg-6 image_of_Services order-0 order-lg-1" data-aos="fade-left">
+                <img src="./Images/Services_image_2.jpg" alt="" class=" ">
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-0" data-aos="fade-rigth">
+                <h2 class="Title_col_Services">
+                    Rapid Prototyping Services
+                </h2>
+                <p class="text_of_services" >
+                    provides high-quality, low-cost rapid prototyping service for customer in worldwide. Our Minimum Order Quantity is 1 piece, in addition, we also offer low-volume and high-volume parts with your special requirement. With our high experience experts team, broad producing technologies and advanced manufacturing equipment, we are your best option of one-stop producing center to satisfy all your need
+                </p>
+                <div><a href="PrototypingServices.html" class="btn btn-primary text-light ms-5 mb-5">Read More </a></div> 
+            </div>
+
+
+        </div>
+        <div class="row px-lg-5 text-light Grid_Services">
+            <div class="col-12 col-lg-6 image_of_Services order-0 order-lg-0" data-aos="fade-right">
+                <img src="./Images/3d_Printed_Services.png" alt="" class=" ">
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-1" data-aos="fade-left">
+                <h2 class="Title_col_Services">
+                    3D Printing Services
+                </h2>
+                <p class="text_of_services" >
+                    3D printing is a revolutionary technology that produces impossible-to-make parts directly from CAD file. The main advantage of using 3D printing is its versatility and flexibility, Runsom Precision offers the latest technologies and comprehensive services of 3D printing, ensuring high-quality printed parts with a wide range of 3D printing materials
+                </p>
+                <div><a href="3DPrintingServices.html" class="btn btn-primary text-light ms-5 mb-5">Read More </a></div> 
+            </div>
+
+
+        </div>
+        
+    </section>
+<!-- Our Projects Section -->
+    <section id="OurProjects"  class=" bg-black py-5">
+    <h1 class="titile_Section text-uppercase text-light mb-5 pt-5">Our Projects</h1>
+           <div class="row g-3 container mx-auto">
+            <div class="col-12 col-md-4 Card_Item" data-aos="fade-up-right" data-aos-delay="0">
+                <div class="card ">
+                    <div class="card-body">
+                        <img src="./Images/Porjects/Project_1.jpg" alt="" class="w-100 mb-5" >
+                      <h3>Project-1</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, blanditiis?</p>
+                    </div>
+                  </div>
+            </div>
+              <div class="col-12 col-md-4 Card_Item" data-aos="fade-up" data-aos-delay="500">
+                <div class="card" >
+                    <div class="card-body">
+                        <img src="./Images/Porjects/Project_2.jpg" alt="" class="w-100 mb-5">
+                      <h3>Project-1</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, blanditiis?</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-4 Card_Item" data-aos="fade-up-left" data-aos-delay="1000">
+                <div class="card  ">
+                    <div class="card-body">
+                        <img src="./Images/Porjects/Project_3.jpeg" alt="" class="w-100 mb-5">
+                      <h3>Project-1</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, blanditiis?</p>
+                    </div>
+                  </div>
+              </div>
+           </div>
+    
+    </section>
+    <!-- Our Team -->
+    <section id="ourteam" >
+        <h1 class="titile_Section text-uppercase text-light mb-5 pt-5">Our Team</h1>
+        <div class="row container mx-auto g-3">
+            <div class="col-12 col-lg-4" data-aos="zoom-out-right">
+                <div class="Testmonials_card mx-auto">
+                    <div class="Testmonials_card_image">
+                        <img src="./Images/testmonial images/testmonial_img_1.jpg" alt="" >
+                    </div>
+                    <div class="Testmonials_card_Content">
+                        <h4 class="text-center theName">Manuella Nevoresky</h4>
+                        <p class="thePosition">CEO-FOUNDER</p>
+                    </div>
+                    <div class="Social_icons">
+                        <div class="icon_container">
+                            <i class="fab fa-facebook-f TheIcon "></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="far fa-envelope TheIcon "></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="fab fa-twitter TheIcon"></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="fab fa-linkedin-in TheIcon"></i>
+                        </div>
+                        
+                       
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 " data-aos="zoom-out-up">
+                <div class="Testmonials_card mx-auto">
+                    <div class="Testmonials_card_image">
+                        <img src="./Images/testmonial images/testmonial_img_2.jpg" alt="" >
+                    </div>
+                    <div class="Testmonials_card_Content">
+                        <h4 class="text-center theName">Manuella Nevoresky</h4>
+                        <p class="thePosition">CEO-FOUNDER</p>
+                    </div>
+                    <div class="Social_icons">
+                        <div class="icon_container">
+                            <i class="fab fa-facebook-f TheIcon "></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="far fa-envelope TheIcon "></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="fab fa-twitter TheIcon"></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="fab fa-linkedin-in TheIcon"></i>
+                        </div>
+                        
+                       
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-4" data-aos="zoom-out-left">
+                <div class="Testmonials_card mx-auto">
+                    <div class="Testmonials_card_image">
+                        <img src="./Images/testmonial images/testmonial_img_3.jpg" alt="" >
+                    </div>
+                    <div class="Testmonials_card_Content">
+                        <h4 class="text-center theName">Manuella Nevoresky</h4>
+                        <p class="thePosition">CEO-FOUNDER</p>
+                    </div>
+                    <div class="Social_icons">
+                        <div class="icon_container">
+                            <i class="fab fa-facebook-f TheIcon "></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="far fa-envelope TheIcon "></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="fab fa-twitter TheIcon"></i>
+                        </div>
+                        <div class="icon_container">
+                            <i class="fab fa-linkedin-in TheIcon"></i>
+                        </div>
+                        
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Contact Us  -->
+    <section id="contactus">
+        <h1 class="titile_Section text-uppercase  mb-5 pt-5">contact us</h1>
+     <div class="row">
+         <div class="col-12 col-lg-6 ps-0 ps-lg-5 mb-lg-0 mb-5" data-aos="fade-right">
+            <div class="row">
+                
+                <div class="col-md-4 text-center  col-12">
+                    <ul class="list-unstyled mb-0 d-flex flex-column   justify-content-between  h-100">
+                        <li><i class="fas fa-map-marker-alt fa-2x " ></i>
+                            <p >Almaty address ...  Kazakshtan</p>
+                        </li>
+        
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+ 077 234 567 89</p>
+                        </li>
+        
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@Company.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8 px-5 col-12">
+                    <form id="contact-form" name="contact-form"  method="POST">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="inputLabel ">Your name</label>
+                                    <input type="text" id="name" name="name" class=" nameInput form-control">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-3">
+                                    <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                          
+        
+                        </div>
+               
+        
+                    
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-3">
+                                    <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                  
+                                </div>
+                            </div>
+                        </div>
+              
+        
+                
+                        <div class="row">
+        
+          
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                    <label for="message" class="mb-2">Your message</label>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  
+                                </div>
+        
+                            </div>
+                        </div>
+                    
+        
+                    </form>
+        
+                    <div class="text-center text-md-left mt-3">
+                        <a class="btn btn-primary w-100" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+         <div class="col-12 col-lg-6 d-flex " data-aos="fade-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65782.31184120044!2d76.8315863190491!3d43.22637267259311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2sAlmaty!5e0!3m2!1sen!2skz!4v1634644956576!5m2!1sen!2skz" 
+            width="90%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            class="mx-auto"></iframe>
+         </div>
+     </div>
+    </section>
+
+    
+    <!-- Footer Section  -->
+    <footer  class=" mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3 >About</h3>
+                <p class="text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error amet ipsa impedit delectus, numquam obcaecati tempora laboriosam sunt fuga, consectetur deleniti similique odit non voluptas. Nemo debitis illo voluptas?</p>
+              </div>
+              <div class="col-12 col-md-6 d-flex align-items-start align-items-lg-center flex-column justify-content-center">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                  <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                  <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                  <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                  <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                  <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+             <a href="#">MohammadPiramun</a>.
+                </p>
+              </div>
+    
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons d-flex align-items-center justify-content-between">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
+    </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+   <script src="https://kit.fontawesome.com/039643d60d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./App.js"></script>
+</body>
+</html>

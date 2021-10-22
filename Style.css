@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap');
+/* font-family: 'Teko', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+   
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    z-index: 1000;
+    background: #fff;
+
+}
+
+.Logo {
+    flex:1 1 10rem;
+    height: 100%;
+}
+
+.Logo img {
+    width: 3.5rem;
+    height: auto;
+}
+.wrapper {
+    max-width: 2500px;
+    margin: auto;
+}
+.nav{
+    flex:1 1 30rem;
+   
+    
+    display: flex;
+}
+
+.nav_list{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    width: 100%;
+    padding: 0 2rem;
+    
+}
+.nav_item {
+margin-left: 1rem;
+}
+.nav_link {
+    color: #000;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    position: relative;
+    text-decoration: none;
+    
+}
+.nav_link::after{
+    position: absolute;
+    content: "";
+    bottom:-30%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #444;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+
+.nav_link:hover {
+    color: rgba(68, 68, 68, 0.5);
+    transition: all 0.5s ease;
+}
+
+
+.nav_link:hover::after {
+    transform: scaleX(1);
+    transition: all 0.5s ease;
+}
+
+/* Btn .BtnHamburger Style Sectio */
+.BtnHamburger
+{
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  display: none;
+  
+}
+.BtnHamburger span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 6px;
+    left: 0;
+    background-color: #000;
+    z-index: 100;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+.BtnHamburger span:nth-child(1)
+{
+    top: 15%;
+    
+}
+.BtnHamburger span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%)
+}
+.BtnHamburger span:nth-child(3)
+{
+    bottom: 15%;
+    
+}
+.active span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotateZ(-45deg);
+    transition: all 0.5s ease;
+}
+.active  span:nth-child(2){
+    opacity: 0;
+    transform: translateY(-50%) translateX(-200px);
+    transition: all 0.5s ease;
+}
+.active span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotateZ(45deg);
+    transition: all 0.5s ease;
+}
+
+.open {
+    max-height: 50rem !important;
+    transition: all 0.5s ease;
+    
+}
+/* Slider Style Section */
+#home{
+    margin-top: 7rem;
+    background-color: red;
+}
+.HomeSwiper {
+    width: 100%;
+    height: 40rem;
+  }
+
+.Slider_Container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Slider_Container img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(68, 68, 68, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.Slider_Content {
+    position: absolute;
+    color:#fff;
+    top:40%;
+    left: 10%;
+    overflow: hidden;
+}
+.Slider_Content_header {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition:all 0.5s ease ;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+/* .active Slider Animation */
+
+.swiper-slide-active .Slider_Content_header {
+    opacity: 1;
+    transform: translateY(0) !important;
+     transition:all 0.5s ease ;
+}
+.Slider_Content_text {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition:all 0.5s ease ;
+    font-family: 'Teko', sans-serif;
+}
+.swiper-slide-active .Slider_Content_text {
+    opacity: 1;
+    transform: translateY(0) !important;
+    transition:all 0.5s ease 0.3s;
+}
+.btn_ContactUs{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgb(58, 58, 224);
+    border: 3px solid transparent;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    opacity: 0;
+    transform: translateY(100px) ;
+    transition:all 0.5s ease !important;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+.btn_ContactUs:hover {
+    background-color: rgba(58, 58, 224, 0.3) !important;
+    border: 3px solid rgb(58, 58, 224);
+    transition:all 0.5s ease !important;
+}
+.swiper-slide-active .btn_ContactUs {
+    opacity: 1;
+    transform: translateY(0) !important;
+    transition:all 0.5s ease 0.6s;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: #f1f1f1;
+    font-weight: bold;
+}
+.Swiper_Btn_color {
+    color:#444 !important;
+    background-color: #f1f1f18e;
+    width: 2rem;
+    height: 100%;
+    top: 0;
+    margin: 0;
+ 
+    
+}
+.Swiper_Btn_left {
+    right: 0% !important;
+    
+}
+.Swiper_Btn_rigth {
+ 
+    left: 0 !important;
+}
+/* About Section */
+#about{
+     width: 100%;
+     min-height: 50vh;
+}
+.About_Contaniner {
+    
+   width: 100%;
+   padding: 0.5rem 1rem; 
+}
+.About_image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.titile_Section {
+    text-align: center;
+}
+
+/* Services Style Section */
+#services .row>*{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.Grid_Services {
+    overflow: hidden;
+    
+    
+}
+.image_of_Services {
+    width: 100%;
+    height: 25rem;
+    
+}
+.image_of_Services img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center     ;
+}
+.Title_col_Services {
+    padding: 3rem 2rem 0rem!important;
+    font-size: 2rem;
+}
+.text_of_services {
+    padding: 0.5rem 3rem!important;
+    font-size: 1.2rem;
+    
+    
+   
+   
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Card_Item{
+    min-height: 20rem;
+}
+.Card_Item img {
+    width: 100%;
+    height: 15rem;
+}
+
+/* ourteam  Section */
+#ourteam {
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.3), rgba(150, 149, 149, 0.6));
+    min-height: 30rem;
+    padding: 2rem 1rem;
+}
+.Testmonials_card {
+    width: 20rem;
+    min-height: 20rem;
+    background: #f1f1f1;
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+}
+.Testmonials_card_image{
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+    border: 2px solid rgba(160, 157, 157, 0.7);
+    display: flex;
+    border-radius: 50%;
+}
+.Testmonials_card_image img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin: auto;
+}
+.Testmonials_card_Content .theName {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.Testmonials_card_Content .thePosition{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #444;
+}
+.Social_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+.Social_icons .TheIcon {
+    font-size: 1rem;
+    border-radius: 50%;
+    color: #444;
+    position: relative;
+    margin: auto;
+}
+.icon_container {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    border-radius: 50%;
+    border: 2px solid rgba(68, 68, 68, 0.5);
+    margin: 0 0.3rem;
+}
+/* contact us section */
+#contactus {
+    width: 100%;
+    min-height: 30rem;
+    padding: 3rem 0 1rem;
+}
+
+
+
+/* Footer section style */
+footer {
+    color: #f1f1f1;
+    min-height: 10rem;
+    background: #000;
+}
+footer a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.footer-links a{
+    
+    margin-top: 1rem;
+}
+footer .social-icons {
+  font-size: 1.2rem;
+}
+
+/* ============================ */
+/* Mold Services Page Section  */
+#HeroSection{
+margin-top: 7rem !important;      
+}
+.bigHero {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+}
+.bigHero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero_title {
+    color: #fff;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+.Mold_services_content {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.Plastices_Prossec_title {
+    margin-bottom: 1rem;
+}
+.Plastices_Prossecs_content {
+    font-size: 1.2rem;
+}
+.Mold_services_Image {
+    width: 100%;
+    height: 20rem;
+  
+   
+}
+.Mold_services_Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    
+}
+.Image_Plastices_Mold_Machine {
+    width: 100%;
+    height: 25rem;
+    margin: 2rem auto;
+}
+.Image_Plastices_Mold_Machine img {
+    width: 100%;
+    height: 100%;
+}
+.prossec_lists {
+     list-style: disc;
+}
+.Mold_plastices_projects {
+    width: 80%;
+    margin: auto;
+}
+.Mold_project_slider {
+    width: 100%;
+    height: 20rem;
+}
+.Mold_project_slider img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* =========================== */
+/* Cnc Machine Services Style */
+
+
+
+.Machines .Machines_Item img{
+width: 100%;
+height: 100%;
+}
+.Machines .Machines_Item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Machines .Machines_Item .Machines_Item_content{
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#f1f1f1;
+    background-color: rgba(68, 68, 68, 0.6);
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+}
+.Machines .Machines_Item:hover .Machines_Item_content{
+    transform: translateY(0%);
+    transition: all 0.5s ease;
+}
+@media screen and (max-width:1024px){
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f1f1f1;
+        z-index: 111;
+        width: 100%;
+        max-height:0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        padding: 0;
+    }
+    .nav_list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .BtnHamburger {
+        display:block !important;
+        
+    }
+    .nav_item {
+        padding-top: 1rem;
+    }
+    .nav_link {
+        text-decoration: none;
+    }
+    .swiper {
+        width: 100%;
+        height: 20rem;
+      }
+      .image_of_Services {
+        height: 30rem ;
+        
+    }  
+      .Slider_Content {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      .Slider_Content_header{
+          width: 80%;
+          text-align: center;
+          font-size: 2rem;
+          margin: 0.5rem 10% !important;
+          
+      }
+      .Slider_Content_text {
+          text-align: center;
+          font-size: 1.2rem;
+          margin-top: 0;
+          margin-left: 0 !important;
+      }
+      .btn_ContactUs {
+        padding: 0.5rem !important;
+        font-size: 1rem;
+        margin: 0 !important;
+
+      }
+      .Card_Item img {
+        width: 100%;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .About_Contaniner{
+        padding: 0.2rem !important;
+        margin: 0 !important;
+    }
+    .Grid_Services {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        overflow: hidden !important;
+    }
+    .image_of_Services {
+        width: 100% !important;
+        overflow: hidden;
+        height: 17rem !important;
+    }
+    .image_of_Services img {
+        width: 100%;
+    }
+   .BtnHamburger{
+       width: 2.2rem;
+       height: 2.2rem;
+   }
+   .Logo img {
+    width: 2rem;
+    height: auto;
+}
+.Card_Item{
+    width: 25rem !important;
+    margin: auto;
+}
+.Card_Item img {
+    width: 100%;
+    height: 13rem;
+}
+.bigHero {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+}
+.bigHero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ============================ */
+/* Mold Services Style Section */
+#HeroSection{
+    margin-top: 5rem;
+}
+.Mold_services_content {
+    font-size: 1rem;
+}
+.Mold_services_Image {
+    margin-bottom: 2rem;
+}
+.Plastices_Prossec_title  {
+    margin-bottom: 1.5rem;
+}  
+.Plastices_Prossecs_content{
+    font-size: 1rem;
+}
+.Image_Plastices_Mold_Machine  {
+    height: 15rem;
+    margin-bottom: 1rem;
+}
+}
+
+@media screen and (max-width:450px){
+    #home{
+        margin-top: 5rem;
+    }
+    .About_content {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .Slider_Content_header{
+        width: 60%;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0.5rem 10% !important;
+    }
+    .Slider_Content_text{
+        display: none;
+    }
+    .btn_ContactUs {
+        margin-top: 1rem !important;
+        text-decoration: none !important;
+    }
+    .image_of_Services {
+        width: 100% !important;
+        overflow: hidden;
+        height: 15rem !important;
+    }
+    .Testmonials_card {
+        width: 100%;
+    }
+    #HeroSection{
+        margin-top: 5rem !important;      
+        }
+    .bigHero {
+        width: 100%;
+        height: 10rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .bigHero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .Mold_Services_Title {
+        text-align: center;
+    }
+    .Mold_services_content  {
+        text-align: center;
+        padding: 0.5rem 1rem;
+        
+    }
+    .Plastices_Prossec_title {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .Plastices_Prossecs_content{
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+    .videos video {
+        width: 80%;
+        margin: 1rem auto;
+        height: 15rem;
+        cursor: pointer !important;
+    }
+}
+
+.Loader_Container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 50000;
+}
+.loader {
+  
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: auto;
+    opacity: 1;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .loaderFinish {
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+  }
+
+  .Active_lang {
+      display: block;
+  }
+  .UnActive_lang {
+      display: none;
+  }
+/* Links For Lang */
+  .Lang_Item a{
+       color: #444;
+       font-size: 1.2rem;
+       font-weight: 500;
+       margin: auto 1rem;
+       border: 1px solid #444;
+       padding: 0.5rem 1rem;
+       border-radius: 1rem;
+    
+  }
