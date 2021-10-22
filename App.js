@@ -95,8 +95,9 @@ AOS.init({
 const Header=document.querySelector("header")
 const HeaderHeight=Header.getBoundingClientRect().height
 
-var scroll = new SmoothScroll('.nav_item .nav_link[href*="#"]',{
-  header:Header,
+var scroll = new SmoothScroll('.nav_link[href*="#"]',{
+  speed: 300,
+  speedAsDuration: true,
   offset:HeaderHeight,
   easing: 'Linear'
 });

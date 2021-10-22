@@ -459,9 +459,6 @@ margin-top: 7rem !important;
 }
 .Mold_services_Image {
     width: 100%;
-    height: 20rem;
-  
-   
 }
 .Mold_services_Image img {
     width: 100%;
@@ -671,9 +668,24 @@ height: 100%;
     height: 15rem;
     margin-bottom: 1rem;
 }
+.Prototyping_image_Container img {
+    width: 100% !important;
+    margin: 0 !important;
+
+}
 }
 
 @media screen and (max-width:450px){
+    /* Home Service Styles */
+    .Title_col_Services {
+         text-align: center;
+    }
+    .text_of_services {
+        text-align: center;
+    }
+    .Btn_ReadMore_Services{
+       margin:0 !important;
+    }
     #home{
         margin-top: 5rem;
     }
@@ -702,6 +714,9 @@ height: 100%;
     .Testmonials_card {
         width: 100%;
     }
+
+
+    /* Mold Services Style Section */
     #HeroSection{
         margin-top: 5rem !important;      
         }
@@ -739,6 +754,27 @@ height: 100%;
         margin: 1rem auto;
         height: 15rem;
         cursor: pointer !important;
+    }
+    /* Сnc Machine Services */
+    .Mold_Services_Title {
+        margin-top: 2rem;
+    }
+    .what_Cnc  {
+        text-align: center;
+        
+    }
+    .what_Cnc h1 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .what_Cnc p {
+        padding: 0 1.5rem;
+    }
+    /* Prototyping services Style Section  */
+    .Prototyping_image_Container img {
+       height: 15rem !important;
+       border-radius: 0.5rem;
+    
     }
 }
 
