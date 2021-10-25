@@ -314,10 +314,6 @@ margin-left: 1rem;
 .text_of_services {
     padding: 0.5rem 3rem!important;
     font-size: 1.2rem;
-    
-    
-   
-   
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -679,9 +675,14 @@ height: 100%;
     /* Home Service Styles */
     .Title_col_Services {
          text-align: center;
+         font-size: 1.6rem;
+         font-weight: 600;
     }
+   
     .text_of_services {
         text-align: center;
+        padding: 0.5rem 1.2rem;
+        
     }
     .Btn_ReadMore_Services{
        margin:0 !important;
@@ -777,7 +778,13 @@ height: 100%;
     
     }
 }
-
+@media screen and (max-width:380px){
+    .text_of_services{
+        font-size: 1rem;
+        padding: 0.2rem 1.5rem !important;
+    }
+    
+}
 .Loader_Container {
     width: 100%;
     height: 100%;
