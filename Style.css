@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap');
-/* font-family: 'Teko', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 a{
    
     text-decoration: none !important;
 }
-
 ul {
     list-style: none;
 }
@@ -30,24 +29,24 @@ header{
     background: #fff;
 
 }
+/* Header for the Home pages and Other Pages */
+/* ============================================> */
+.wrapper {
+    max-width: 2500px;
+    margin: auto;
+}
 
 .Logo {
     flex:1 1 10rem;
     height: 100%;
 }
-
 .Logo img {
     width: 3.5rem;
     height: auto;
 }
-.wrapper {
-    max-width: 2500px;
-    margin: auto;
-}
+/* NavBar for the Header */
 .nav{
     flex:1 1 30rem;
-   
-    
     display: flex;
 }
 
@@ -56,7 +55,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
     width: 100%;
     padding: 0 2rem;
     
@@ -70,8 +68,8 @@ margin-left: 1rem;
     white-space: nowrap;
     position: relative;
     text-decoration: none;
-    
 }
+/* Some animation for the bottom border for any nav_link */
 .nav_link::after{
     position: absolute;
     content: "";
@@ -96,7 +94,7 @@ margin-left: 1rem;
     transition: all 0.5s ease;
 }
 
-/* Btn .BtnHamburger Style Sectio */
+/* Btn .BtnHamburger Style Section this for btn that will display in Mobile view*/
 .BtnHamburger
 {
   position: relative;
@@ -119,7 +117,6 @@ margin-left: 1rem;
 .BtnHamburger span:nth-child(1)
 {
     top: 15%;
-    
 }
 .BtnHamburger span:nth-child(2){
     top: 50%;
@@ -130,12 +127,13 @@ margin-left: 1rem;
     bottom: 15%;
     
 }
+/* This is Class that when you click on the Btn will Activate the Animation */
 .active span:nth-child(1){
     top: 50%;
     transform: translateY(-50%) rotateZ(-45deg);
     transition: all 0.5s ease;
 }
-.active  span:nth-child(2){
+.active span:nth-child(2){
     opacity: 0;
     transform: translateY(-50%) translateX(-200px);
     transition: all 0.5s ease;
@@ -145,22 +143,25 @@ margin-left: 1rem;
     transform: translateY(50%) rotateZ(45deg);
     transition: all 0.5s ease;
 }
-
+/* Class For the open the navbar in Mobile version  */
 .open {
     max-height: 50rem !important;
     transition: all 0.5s ease;
     
 }
+
+
 /* Slider Style Section */
+
 #home{
-    margin-top: 7rem;
-    background-color: red;
+    margin-top: 7rem; 
 }
+/* second Class for the class of Swiper  */
 .HomeSwiper {
     width: 100%;
     height: 40rem;
   }
-
+/* the Class inside every swiper-slide */
 .Slider_Container {
     width: 100%;
     height: 100%;
@@ -188,18 +189,19 @@ margin-left: 1rem;
     overflow: hidden;
 }
 .Slider_Content_header {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
     opacity: 0;
     transform: translateY(-100px);
     transition:all 0.5s ease ;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2px;
 }
 
 /* .active Slider Animation */
-
+/* ========================== */
+/* this is one is for the Title for every Slider with Animation */
 .swiper-slide-active .Slider_Content_header {
     opacity: 1;
     transform: translateY(0) !important;
@@ -243,6 +245,7 @@ margin-left: 1rem;
     transform: translateY(0) !important;
     transition:all 0.5s ease 0.6s;
 }
+/* Swiper Navigation Styles Start */
 .swiper-button-prev,
 .swiper-button-next{
     color: #f1f1f1;
@@ -263,16 +266,17 @@ margin-left: 1rem;
     
 }
 .Swiper_Btn_rigth {
- 
     left: 0 !important;
 }
+/* Swiper Navigation Styles End */
+/* ===================================> */
+/* ===================================> */
 /* About Section */
 #about{
      width: 100%;
      min-height: 50vh;
 }
 .About_Contaniner {
-    
    width: 100%;
    padding: 0.5rem 1rem; 
 }
@@ -284,40 +288,53 @@ margin-left: 1rem;
 
 .titile_Section {
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.about_title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+}
+.About_content{
+    font-family: 'Lora', serif;
+    line-height: 2.1rem;
 }
 
-/* Services Style Section */
+/* Services Style Section is Starts Here !! */
 #services .row>*{
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 .Grid_Services {
     overflow: hidden;
-    
-    
 }
 .image_of_Services {
     width: 100%;
-    height: 25rem;
-    
+    height: 30rem;
 }
 .image_of_Services img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center     ;
+    object-position: center;
 }
 .Title_col_Services {
     padding: 3rem 2rem 0rem!important;
     font-size: 2rem;
 }
+.Btn_ReadMore_Services {
+    padding: 0.5rem 2rem!important;
+    font-size: 1.2rem !important;
+    margin-top: 1rem;
+
+}
 .text_of_services {
     padding: 0.5rem 3rem!important;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     overflow: hidden;
-    text-overflow: ellipsis;
+    font-family: 'Lora', serif;
 }
-
 .Card_Item{
     min-height: 20rem;
 }
@@ -325,8 +342,10 @@ margin-left: 1rem;
     width: 100%;
     height: 15rem;
 }
-
-/* ourteam  Section */
+/* Services Style Section is Ends Here !! */
+/* ========================> */
+/* ========================> */
+/* OurTeam  Section Style Section Start from here !! */
 #ourteam {
     background: linear-gradient(to right top, rgba(0, 0, 0, 0.3), rgba(150, 149, 149, 0.6));
     min-height: 30rem;
@@ -386,15 +405,17 @@ margin-left: 1rem;
     border: 2px solid rgba(68, 68, 68, 0.5);
     margin: 0 0.3rem;
 }
+/* OurTeam  Section Style Section Ends /
+/* ===============================> */
+/* ===============================> */
 /* contact us section */
 #contactus {
     width: 100%;
     min-height: 30rem;
     padding: 3rem 0 1rem;
 }
-
-
-
+/* ==========================> */
+/* ==========================> */
 /* Footer section style */
 footer {
     color: #f1f1f1;
@@ -412,9 +433,10 @@ footer a {
 footer .social-icons {
   font-size: 1.2rem;
 }
-
-/* ============================ */
-/* Mold Services Page Section  */
+/* Footer section style id End */
+/* =============================> */
+/* ============================> */
+/* Mold Services Page _  Styles _ Section  Start*/
 #HeroSection{
 margin-top: 7rem !important;      
 }
@@ -442,26 +464,37 @@ margin-top: 7rem !important;
     width: 100%;
     text-align: center;
 }
-.Mold_services_content {
+.Mold_services_content,
+._3D_Services_content {
     font-size: 1.3rem;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
-.Plastices_Prossec_title {
+
+.Plastices_Prossec_title,
+.Printing_3D_Advantages_title,
+.Prototype_Page_title {
     margin-bottom: 1rem;
+    
 }
-.Plastices_Prossecs_content {
+.Plastices_Prossecs_content ,
+.Printing_3D_Advantages_content,
+.Prototype_Page_Content{
     font-size: 1.2rem;
+    margin-bottom: 3rem;
+    
 }
-.Mold_services_Image {
-    width: 100%;
+.Mold_services_Image
+{
+    width: 100%; 
 }
 .Mold_services_Image img {
-    width: 100%;
+    width: 70%;
     height: 100%;
     object-fit: contain;
     object-position: center;
-    
+    margin-left: 15% ;
+    border-radius: 1rem;
 }
 .Image_Plastices_Mold_Machine {
     width: 100%;
@@ -488,14 +521,11 @@ margin-top: 7rem !important;
     width: 100%;
     height: 100%;
 }
-
+/* Mold Services Page _  Styles _ Section  Ends*/
 
 
 /* =========================== */
-/* Cnc Machine Services Style */
-
-
-
+/* Cnc Machine Services ____Page____  Style Start*/
 .Machines .Machines_Item img{
 width: 100%;
 height: 100%;
@@ -524,7 +554,26 @@ height: 100%;
     transform: translateY(0%);
     transition: all 0.5s ease;
 }
+/* Cnc Machine Services ____Page____  Style ____End*/
+/* =====================================>*/
+/* =====================================>*/
+/* 3D Printers Page Styles ===========================> */
+.Images_3D {
+    width: 80%;
+}
+.Images_3D_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Images_3D img {
+    width: 50%;
+}
+.Printing_3D_Advantages{
+    margin-top: 3rem;
+}
 @media screen and (max-width:1024px){
+    /* Navbar Secction  */
     .nav {
         position: absolute;
         top: 100%;
@@ -553,13 +602,13 @@ height: 100%;
     .nav_link {
         text-decoration: none;
     }
+    /* make Swiper Height smaller to  20rem Start */
     .swiper {
         width: 100%;
         height: 20rem;
       }
       .image_of_Services {
-        height: 30rem ;
-        
+        height: 30rem ; 
     }  
       .Slider_Content {
           top: 0;
@@ -590,12 +639,12 @@ height: 100%;
         margin: 0 !important;
 
       }
+      /* make Swiper Height smaller to  20rem End */
       .Card_Item img {
         width: 100%;
         height: 12rem;
     }
 }
-
 @media screen and (max-width:768px){
     .About_Contaniner{
         padding: 0.2rem !important;
@@ -670,7 +719,6 @@ height: 100%;
 
 }
 }
-
 @media screen and (max-width:450px){
     /* Home Service Styles */
     .Title_col_Services {
@@ -685,7 +733,9 @@ height: 100%;
         
     }
     .Btn_ReadMore_Services{
-       margin:0 !important;
+       margin:1rem !important;
+       
+       
     }
     #home{
         margin-top: 5rem;
@@ -712,6 +762,7 @@ height: 100%;
         overflow: hidden;
         height: 15rem !important;
     }
+   
     .Testmonials_card {
         width: 100%;
     }
@@ -733,7 +784,8 @@ height: 100%;
         object-fit: cover;
         object-position: center;
     }
-    .Mold_Services_Title {
+    .Mold_Services_Title
+    ,._3D_Services_Title {
         text-align: center;
     }
     .Mold_services_content  {
