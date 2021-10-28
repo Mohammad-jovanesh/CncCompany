@@ -154,7 +154,7 @@ margin-left: 1rem;
 /* Slider Style Section */
 
 #home{
-    margin-top: 7rem; 
+    margin-top: 10rem; 
 }
 /* second Class for the class of Swiper  */
 .HomeSwiper {
@@ -279,11 +279,19 @@ margin-left: 1rem;
 .About_Contaniner {
    width: 100%;
    padding: 0.5rem 1rem; 
+   
+   display: flex;
+   align-items: center;
 }
+
 .About_image{
-    width: 100%;
-    height: 20rem;
+    width: 80%;
+    height: 30rem;
     object-fit: cover;
+    object-position: center;
+    margin: auto;
+    border-radius: 0.5rem;
+    
 }
 
 .titile_Section {
@@ -295,10 +303,12 @@ margin-left: 1rem;
 .about_title {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 800;
+    margin-top: 5rem;
 }
 .About_content{
     font-family: 'Lora', serif;
-    line-height: 2.1rem;
+    line-height: 1.7rem;
+    line-height: 2rem;
 }
 
 /* Services Style Section is Starts Here !! */
@@ -463,6 +473,7 @@ margin-top: 7rem !important;
     font-weight: 800;
     width: 100%;
     text-align: center;
+    text-shadow: 2px 2px 5px #444;
 }
 .Mold_services_content,
 ._3D_Services_content {
@@ -639,6 +650,10 @@ height: 100%;
         font-size: 1rem;
         margin: 0 !important;
 
+      }
+      .About_image {
+          width: 85%;
+          border-radius: 0!important;
       }
       /* make Swiper Height smaller to  20rem End */
       .Card_Item img {
