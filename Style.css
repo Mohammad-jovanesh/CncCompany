@@ -497,13 +497,14 @@ margin-top: 7rem !important;
     border-radius: 1rem;
 }
 .Image_Plastices_Mold_Machine {
-    width: 100%;
+    width: 90%;
     height: 25rem;
     margin: 2rem auto;
 }
 .Image_Plastices_Mold_Machine img {
     width: 100%;
     height: 100%;
+    border-radius: 1rem;
 }
 .prossec_lists {
      list-style: disc;
