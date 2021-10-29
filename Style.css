@@ -193,9 +193,10 @@ margin-left: 1rem;
 .Slider_Content {
     position: absolute;
     color:#fff;
-    top:40%;
+    top:50%;
     left: 10%;
     overflow: hidden;
+    transform: translateY(-50%);
 }
 .Slider_Content_header {
     font-size: 5rem;
@@ -206,6 +207,10 @@ margin-left: 1rem;
     transition:all 0.5s ease ;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2px;
+    width: 60%;
+   
+    
+    
 }
 
 /* .active Slider Animation */
@@ -317,7 +322,11 @@ margin-left: 1rem;
 .About_content{
     font-family: 'Lora', serif;
     line-height: 1.7rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+    text-justify: inter-word;
+    width: 95%;
+    margin: auto;
 }
 
 /* Services Style Section is Starts Here !! */
@@ -353,6 +362,8 @@ margin-left: 1rem;
     font-size: 1.5rem;
     overflow: hidden;
     font-family: 'Lora', serif;
+    font-size: 1rem;
+    text-align: left;
 }
 .Card_Item{
     min-height: 20rem;
@@ -646,7 +657,6 @@ height: 100%;
           text-align: center;
           font-size: 2rem;
           margin: 0.5rem 10% !important;
-          
       }
       .Slider_Content_text {
           text-align: center;
