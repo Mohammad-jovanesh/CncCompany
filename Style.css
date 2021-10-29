@@ -309,6 +309,8 @@ margin-left: 1rem;
     font-family: 'Lora', serif;
     line-height: 1.7rem;
     line-height: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Services Style Section is Starts Here !! */
@@ -344,6 +346,9 @@ margin-left: 1rem;
     font-size: 1.5rem;
     overflow: hidden;
     font-family: 'Lora', serif;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 100%;
 }
 .Card_Item{
     min-height: 20rem;
