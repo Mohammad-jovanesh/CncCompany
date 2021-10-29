@@ -38,6 +38,12 @@ header{
     color: #444;
     transition: color 0.5s ease;
 }
+.BackGraound .nav_link:hover {
+    color: #444;
+}
+.BackGraound .nav_link::after {
+    background: #000;
+}
 /* Header for the Home pages and Other Pages */
 /* ============================================> */
 .wrapper {
@@ -49,9 +55,23 @@ header{
     flex:1 1 10rem;
     height: 100%;
 }
-.Logo img {
+/* .Logo img {
     width: 3.5rem;
     height: auto;
+    fill: #fff !important;
+} */
+.Logo_Svg{
+    
+    width: 50px;
+    height: auto;
+}
+.Logo_Svg>*{
+    fill:#fff !important;
+    transition: all 0.5s ease;
+}
+.BackGraound .Logo_Svg>* {
+    fill:#444 !important;
+    transition: all 0.5s ease;
 }
 /* NavBar for the Header */
 .nav{
@@ -86,14 +106,14 @@ margin-left: 1rem;
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #444;
+    background-color: #f1f1f1;
     transform: scaleX(0);
     transform-origin: left;
     transition: all 0.5s ease;
 }
 
 .nav_link:hover {
-    color: rgba(68, 68, 68, 0.5);
+    color: rgba(238, 236, 236, 0.5);
     transition: all 0.5s ease;
 }
 
@@ -161,14 +181,13 @@ margin-left: 1rem;
 
 
 /* Slider Style Section */
-
 #home{
     margin-top: 0rem; 
 }
 /* second Class for the class of Swiper  */
 .HomeSwiper {
     width: 100%;
-    height: 50rem;
+    height: 100vh;
   }
 /* the Class inside every swiper-slide */
 .Slider_Container {
@@ -176,17 +195,15 @@ margin-left: 1rem;
     height: 100%;
     position: relative;
 }
-
 .Slider_Container img {
     width: 100%;
     height: 100%;
 }
-
 .overlayer {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(68, 68, 68, 0.5);
+    background:linear-gradient(to top , rgba(32, 32, 32, 0.3), rgba(68, 68, 68, 0.6));
     width: 100%;
     height: 100%;
 }
@@ -292,20 +309,19 @@ margin-left: 1rem;
 }
 .About_Contaniner {
    width: 100%;
-   padding: 0.5rem 1rem; 
-   
+   padding: 0.5rem 0; 
    display: flex;
    align-items: center;
 }
-
+.About_image_Container {
+    width: 100%;
+    height: 36rem;
+}
 .About_image{
-    width: 80%;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    margin: auto;
-    border-radius: 0.5rem;
-    
 }
 
 .titile_Section {
@@ -468,11 +484,11 @@ footer .social-icons {
 /* ============================> */
 /* Mold Services Page _  Styles _ Section  Start*/
 #HeroSection{
-margin-top: 7rem !important;      
+margin-top: 0rem !important;      
 }
 .bigHero {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     overflow: hidden;
     position: relative;
 }
@@ -506,14 +522,12 @@ margin-top: 7rem !important;
 .Printing_3D_Advantages_title,
 .Prototype_Page_title {
     margin-bottom: 1rem;
-    
 }
 .Plastices_Prossecs_content ,
 .Printing_3D_Advantages_content,
 .Prototype_Page_Content{
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    
 }
 .Mold_services_Image
 {
