@@ -27,7 +27,7 @@ header{
     justify-content: space-between;
     padding: 1rem 3rem;
     z-index: 1000;
-    background: #fff;
+    background: linear-gradient(to top ,rgba(255, 255, 255, 0.5),#ffff);
 
 }
 
