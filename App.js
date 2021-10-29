@@ -103,6 +103,15 @@ var scroll = new SmoothScroll('.nav_link[href*="#"]',{
 });
 
 
+window.addEventListener("scroll",()=>{
+  console.log(window.scrollY)
+  if(window.scrollY>200) {
+    Header.classList.add("BackGraound")
+  }
+  if(window.scrollY<100){
+    Header.classList.remove("BackGraound")
+  }
 
+})
 
 
